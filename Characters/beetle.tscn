@@ -40,6 +40,7 @@ metadata/_edit_group_ = true
 mesh = SubResource("CylinderMesh_mugv5")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Candle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shadow_enabled = true
-omni_range = 20.0
+omni_range = 10.0
+omni_attenuation = 0.0
