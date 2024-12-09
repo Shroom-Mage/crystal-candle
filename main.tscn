@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://nqoewlyugd3"]
+
+[ext_resource type="PackedScene" uid="uid://com8epcipqkd2" path="res://Environment/ground.tscn" id="1_v52kt"]
+[ext_resource type="PackedScene" uid="uid://djsivau2y18c5" path="res://Characters/player.tscn" id="2_wfbdn"]
+[ext_resource type="PackedScene" uid="uid://df44tnd2ukf0f" path="res://Characters/beetle.tscn" id="3_vp2cr"]
+
+[node name="Main" type="Node"]
+
+[node name="Ground" parent="." instance=ExtResource("1_v52kt")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.816138, 0.577858, 0, -0.577858, 0.816138, 0, 25, 35)
+fov = 15.0
+
+[node name="Player" parent="." instance=ExtResource("2_wfbdn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.578238, 0, 2.06043)
+
+[node name="Beetle" parent="." instance=ExtResource("3_vp2cr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
